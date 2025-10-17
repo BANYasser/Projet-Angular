@@ -1,0 +1,102 @@
+:host {
+  display: block;
+  padding: 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+h2 {
+  color: #1976d2;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #f5f7fa;
+  color: #37474f;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+tbody tr {
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f1f8ff;
+  }
+
+  &:last-child td {
+    border-bottom: none;
+  }
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.add-btn {
+  background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem; // Mets 2rem ou plus pour plus d’espace
+  margin-top: 1rem;    // Optionnel, pour l’espace au-dessus
+  transition: background 0.2s;
+  &:hover {
+    background: linear-gradient(90deg, #1565c0 0%, #1e88e5 100%);
+  }
+}
+
+.edit-btn {
+  background: linear-gradient(90deg, #43a047 0%, #66bb6a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 1.1rem;
+  font-size: 0.97rem;
+  cursor: pointer;
+  margin-right: 0.4rem;
+  transition: background 0.2s;
+  font-weight: 500;
+  &:hover {
+    background: linear-gradient(90deg, #388e3c 0%, #43a047 100%);
+  }
+}
+
+.delete-btn {
+  background: linear-gradient(90deg, #d32f2f 0%, #e57373 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 1.1rem;
+  font-size: 0.97rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+  &:hover {
+    background: linear-gradient(90deg, #b71c1c 0%, #d32f2f 100%);
+  }
+}

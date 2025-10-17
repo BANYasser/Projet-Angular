@@ -1,0 +1,24 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Connexion</h2>
+    <!-- 1. Appeler onLogin() à la soumission du formulaire -->
+    <form (ngSubmit)="onLogin()">
+      <div class="form-group">
+        <label for="username">Nom d'utilisateur</label>
+        <!-- 2. Lier l'input à la variable 'username' -->
+        <input type="text" id="username" name="username" [(ngModel)]="username" placeholder="Entrez votre nom d'utilisateur" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <!-- 2. Lier l'input à la variable 'password' -->
+        <input type="password" id="password" name="password" [(ngModel)]="password" placeholder="Entrez votre mot de passe" required />
+      </div>
+
+      <!-- 3. Afficher le message d'erreur s'il existe -->
+      <p *ngIf="error" class="error-message">{{ error }}</p>
+
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+</div>

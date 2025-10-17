@@ -1,0 +1,260 @@
+{
+  "medicines": [
+    {
+      "name": "chloridine",
+      "price": 500,
+      "stock": 4,
+      "description": "",
+      "id": "1"
+    },
+    {
+      "name": "Amoxicilline",
+      "price": 1500,
+      "stock": 20,
+      "description": "",
+      "id": "2"
+    },
+    {
+      "name": "Ibuprofène",
+      "price": 1200,
+      "stock": 16,
+      "description": "",
+      "id": "3"
+    },
+    {
+      "id": "5",
+      "name": "Ciprofloxacine",
+      "category": "Antibiotique",
+      "price": 1800,
+      "stock": 8,
+      "expiration": "2025-05-10"
+    },
+    {
+      "name": "Prednisone",
+      "price": 1500,
+      "stock": 6,
+      "description": "",
+      "id": "6"
+    },
+    {
+      "name": "Oméprazole",
+      "price": 9500,
+      "stock": 30,
+      "description": "",
+      "id": "7"
+    },
+    {
+      "id": "8",
+      "name": "Metformine",
+      "category": "Diabète",
+      "price": 1300,
+      "stock": 30,
+      "expiration": "2026-10-25"
+    },
+    {
+      "id": "9",
+      "name": "Loratadine",
+      "category": "Allergie",
+      "price": 850,
+      "stock": 19,
+      "expiration": "2027-02-15"
+    },
+    {
+      "name": "Doxycycline",
+      "price": 1750,
+      "stock": 5,
+      "description": "",
+      "id": "10"
+    },
+    {
+      "name": "Paracetamol",
+      "price": 1529.34,
+      "stock": 43,
+      "description": "anti-douleur",
+      "id": "11"
+    },
+    {
+      "name": "Medicine 5",
+      "price": 1264.72,
+      "stock": 34,
+      "description": "",
+      "id": "12"
+    },
+    {
+      "id": "13",
+      "name": "Medicine 3",
+      "category": "Douleur",
+      "price": 1529.47,
+      "stock": 48,
+      "expiration": "2025-12-05"
+    },
+    {
+      "id": "14",
+      "name": "Medicine 4",
+      "category": "Anti-inflammatoire",
+      "price": 369.15,
+      "stock": 23,
+      "expiration": "2027-06-15"
+    },
+    {
+      "name": "Medicine 5",
+      "price": 1120.5,
+      "stock": 1,
+      "description": "",
+      "id": "15"
+    },
+    {
+      "id": "16",
+      "name": "Medicine 6",
+      "category": "Gastro-intestinal",
+      "price": 980.25,
+      "stock": 27,
+      "expiration": "2027-03-05"
+    },
+    {
+      "id": "17",
+      "name": "Medicine 7",
+      "category": "Diabète",
+      "price": 1450.6,
+      "stock": 33,
+      "expiration": "2026-12-22"
+    },
+    {
+      "id": "18",
+      "name": "Medicine 8",
+      "category": "Allergie",
+      "price": 890.1,
+      "stock": 41,
+      "expiration": "2027-05-30"
+    },
+    {
+      "id": "19",
+      "name": "Medicine 9",
+      "category": "Antibiotique",
+      "price": 1650,
+      "stock": 29,
+      "expiration": "2025-08-15"
+    },
+    {
+      "id": "3f32",
+      "name": "fal",
+      "price": 500,
+      "stock": 20,
+      "description": ""
+    },
+    {
+      "id": "dc13",
+      "name": "Softdrops",
+      "price": 7500,
+      "stock": 50,
+      "description": "Collyre"
+    },
+    {
+      "id": "4e44",
+      "name": "Allercheck",
+      "price": 2500,
+      "stock": 60,
+      "description": ""
+    },
+    {
+      "id": "d6be",
+      "name": "Lithacold",
+      "price": 1250,
+      "stock": 35,
+      "description": ""
+    },
+    {
+      "id": "5cff",
+      "name": "Fucicidine pommade",
+      "price": 2500,
+      "stock": 7,
+      "description": ""
+    },
+    {
+      "id": "ba15",
+      "name": "ciprofloxaxine",
+      "price": 1250,
+      "stock": 12,
+      "description": ""
+    },
+    {
+      "id": "65d1",
+      "name": "Ciprofloxacine",
+      "price": 2500,
+      "stock": 10,
+      "description": ""
+    }
+  ],
+  "sales": [
+    {
+      "id": "813a",
+      "medicineId": "9",
+      "medicineName": "Loratadine",
+      "quantity": 10,
+      "date": "2025-10-05",
+      "totalPrice": 8500
+    },
+    {
+      "id": "577d",
+      "medicineId": "d6be",
+      "medicineName": "Lithacold",
+      "quantity": 15,
+      "date": "2025-10-06",
+      "totalPrice": 18750
+    },
+    {
+      "id": "8220",
+      "medicineId": "8",
+      "medicineName": "Metformine",
+      "quantity": 5,
+      "date": "2025-10-06",
+      "totalPrice": 6500
+    },
+    {
+      "id": "cd97",
+      "medicineId": null,
+      "medicineName": "Aspirine",
+      "quantity": 10,
+      "date": "2025-10-09",
+      "totalPrice": 7000
+    },
+    {
+      "id": "bdff",
+      "medicineId": "2",
+      "medicineName": "Amoxicilline",
+      "quantity": 10,
+      "date": "2025-10-17",
+      "totalPrice": 15000
+    },
+    {
+      "id": "b3a1",
+      "medicineId": "5",
+      "medicineName": "Ciprofloxacine",
+      "quantity": 6,
+      "date": "2025-10-17",
+      "totalPrice": 10800
+    },
+    {
+      "id": "ff5d",
+      "medicineId": "9",
+      "medicineName": "Loratadine",
+      "quantity": 10,
+      "date": "2025-10-17",
+      "totalPrice": 8500
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "abcd",
+      "role": "user"
+    }
+  ]
+}

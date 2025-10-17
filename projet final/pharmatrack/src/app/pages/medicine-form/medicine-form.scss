@@ -1,0 +1,109 @@
+.form-container {
+  position: relative;
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #f44336;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.4rem;
+  line-height: 26px; // Ajusté pour centrer la croix
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+
+  &:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+  }
+}
+
+form {
+
+  h2 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    label {
+      font-weight: 500;
+      color: #2e7d32;
+      margin-bottom: 0.3rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.6rem;
+      border: 1px solid #a5d6a7;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+      &:focus {
+        border-color: #4caf50;
+        box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+      }
+
+      &.ng-invalid.ng-touched {
+        border-color: #f44336;
+        box-shadow: 0 0 4px rgba(244, 67, 54, 0.3);
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    div { // message d’erreur
+      font-size: 0.85rem;
+      color: #f44336;
+      margin-top: 0.3rem;
+    }
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #43a047;
+    }
+
+    &:disabled {
+      background-color: #a5d6a7;
+      cursor: not-allowed;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.container {
+  padding: 2rem;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  .filter-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #cfd8dc;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &:focus {
+      border-color: #4caf50;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    }
+  }
+}
+
+.loading, .error, .empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden; /* Pour que le border-radius s'applique aux coins du thead */
+}
+
+.table-header {
+  th {
+    background-color: #f5f7fa;
+    color: #37474f;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+tbody {
+  tr {
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+
+    &:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  td {
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+
+    &.low-stock {
+      color: #d32f2f;
+      font-weight: bold;
+    }
+
+    .low-stock-alert {
+      margin-left: 8px;
+      cursor: help;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-left: 0.5rem;
+}
+
+.btn-primary { background-color: #4caf50; color: white; }
+.btn-secondary { background-color: #ff9800; color: white; }
+.btn-danger { background-color: #f44336; color: white; }
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,52 @@
+<div class="dashboard-container">
+  <h2 class="dashboard-title">Tableau de Bord</h2>
+
+  @if (isLoading) {
+    <div class="loading">Chargement des données...</div>
+  } @else if (error) {
+    <div class="error">{{ error }}</div>
+  } @else {
+    <!-- Section des statistiques rapides -->
+    <section class="stats-section">
+      <div class="stat-card revenue">
+        <div class="card-header">Chiffre d'affaires du jour</div>
+        <div class="card-value">{{ todaysRevenue | currency:'XOF' }}</div>
+      </div>
+      <div class="stat-card sales-count">
+        <div class="card-header">Nombre de ventes du jour</div>
+        <div class="card-value">{{ todaysSalesCount }}</div>
+      </div>
+    </section>
+
+    <!-- Section des médicaments en rupture -->
+    <section class="low-stock-section">
+      <h3>Médicaments en rupture de stock (< 10)</h3>
+      @if (lowStockMedicines.length > 0) {
+        <ul class="low-stock-list">
+          @for (med of lowStockMedicines; track med.id) {
+            <li>
+              <span class="med-name">{{ med.name }}</span>
+              <span class="med-stock">Stock restant : {{ med.stock }}</span>
+            </li>
+          }
+        </ul>
+      } @else {
+        <p class="no-data">Aucun médicament en rupture de stock. Bravo !</p>
+      }
+    </section>
+
+    <!-- Section pour le futur graphique -->
+   <section class="chart-section">
+  <h3>Statistiques des ventes</h3>
+  <div class="charts-container">
+    <div class="chart-box">
+      <canvas id="barChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+</section>
+
+  }
+</div>

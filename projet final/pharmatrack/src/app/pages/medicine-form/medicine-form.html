@@ -1,0 +1,28 @@
+<div class="form-container">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <button type="button" class="close-btn" (click)="close()" title="Fermer">&times;</button>
+    <h2>{{ pageTitle }}</h2>
+  <div>
+    <label>Nom</label>
+    <input formControlName="name" />
+    <div *ngIf="form.controls['name'].invalid && form.controls['name'].touched">Nom requis</div>
+  </div>
+
+  <div>
+    <label>Prix</label>
+    <input type="number" formControlName="price" />
+  </div>
+
+  <div>
+    <label for="stock">Stock</label>
+    <input id="stock" formControlName="stock" type="number" />
+  </div>
+
+  <div>
+    <label>Description</label>
+    <textarea formControlName="description"></textarea>
+  </div>
+
+  <button type="submit">Enregistrer</button>
+  </form>
+</div>

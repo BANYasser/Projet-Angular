@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 2px solid #4caf50;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .logo {
+    height: 75px;
+    width: auto;
+     transition: transform 0.2s ease;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2e7d32;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto; // Pousse le menu et le bouton vers la droite
+
+  a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #66bb6a;
+    }
+
+    &.active {
+      border-bottom: 2px solid #4caf50;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+.user-actions {
+  margin-left: 2rem; // Espacement réduit entre le menu et le bouton
+  .logout-button {
+    background-color: #e0e0e0; // Un gris clair
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px; // Pour des bords bien arrondis
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600; // Un peu plus gras
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background-color: #df4949; // Un gris un peu plus foncé au survol
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<header class="header">
+  <a routerLink="/dashboard" class="logo-section">
+    <img src="assets/pchat.png" alt="Logo Pharmacie" class="logo" />
+    <h1 class="title">PharmaTrack</h1>
+  </a>
+
+  <nav class="nav-links">
+    <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+    <a routerLink="/medicines" routerLinkActive="active">Produits</a>
+    <a routerLink="/sales" routerLinkActive="active">Ventes</a>
+    <!-- Pour l'instant, les statistiques pointent vers le dashboard, vous pourrez changer cela plus tard -->
+    <a routerLink="/dashboard" routerLinkActive="active">Statistiques</a>
+  </nav>
+
+  <div class="user-actions">
+    <button (click)="logout()" class="logout-button">Déconnexion</button>
+  </div>
+</header>

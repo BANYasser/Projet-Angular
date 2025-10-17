@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>Liste des Médicaments</h2>
+
+  <div class="toolbar">
+    <input [(ngModel)]="filter" placeholder="Filtrer par nom..." class="filter-input">
+    @if (isAdmin) {
+      <button (click)="add()" class="btn btn-primary">Ajouter un médicament</button>
+    }
+  </div>
+
+  @if (isLoading) {
+    <div class="loading">Chargement...</div>
+  } @else if (error) {
+    <div class="error">{{ error }}</div>
+  } @else if (filteredMedicines.length === 0) {
+    <div class="empty-state">Aucun médicament trouvé.</div>
+  } @else {
+    <table class="table">
+      <thead class="table-header">
+      <tr>
+        <th>Nom</th>
+        <th>Prix</th>
+        <th>Stock</th>
+        @if (isAdmin) { <th>Actions</th> }
+      </tr>
+      </thead>
+      <tbody>
+      @for (m of filteredMedicines; track m.id) {
+        <tr>
+          <td>{{ m.name }}</td>
+          <td>{{ m.price | currency:'XOF' }}</td>
+          <td [class.low-stock]="m.stock < 10">{{ m.stock }}
+            @if (m.stock < 10) { <span class="low-stock-alert" title="Le stock est bas !">⚠️</span> }
+          </td>
+          @if (isAdmin) {
+            <td>
+              <button (click)="edit(m.id)" class="btn btn-secondary">Modifier</button>
+              <button (click)="delete(m.id)" class="btn btn-danger">Supprimer</button>
+            </td>
+          }
+        </tr>
+  }
+      </tbody>
+    </table>
+  }
+</div>
